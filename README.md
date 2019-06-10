@@ -1,5 +1,6 @@
 # bosh-env
-An image that satisfies the required dependencies for the bosh create-env command.  
+![Docker Pulls](https://img.shields.io/docker/pulls/dohq/bosh-env.svg)  
+An image that satisfies the required dependencies for the `bosh create-env` command.  
 
 BaseImage: Ubuntu/18.04
 Packages:
@@ -24,7 +25,6 @@ Additional CLI
 * Terraform
 * jq
 * bosh
-
 
 
 ## Usage
