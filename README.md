@@ -30,6 +30,7 @@ Additional CLI
 ## Usage
 ```
 docker run -v $PWD:/work -it dohq/bosh-env:latest
+root@foobarbaz# cd /work
 root@foobarbaz# bosh create-env ...
 ```
 
