@@ -4,6 +4,7 @@ MAINTAINER dohq <dorastone@gmail.com>
 ENV BOSH_CLI_VERSION 5.5.1
 ENV JQ_CLI_VERSION 1.6
 ENV TERRAFORM_CLI_VERSION 0.12.1
+ENV CF_UAAC_GEM_VERSION 4.1.0
 
 RUN apt-get update && \
       apt-get install -y build-essential zlibc zlib1g-dev ruby ruby-dev openssl libxslt1-dev libxml2-dev libssl-dev libreadline7 libreadline-dev libyaml-dev libsqlite3-dev sqlite3 curl wget ssh && \
@@ -20,4 +21,5 @@ RUN apt-get update && \
       mv terraform /usr/local/bin/ && \
       rm terraform_${TERRAFORM_CLI_VERSION}_linux_amd64.zip && \
       apt-get clean && \
-      rm -rf /var/lib/apt/lists/*
+      rm -rf /var/lib/apt/lists/* \
+      gem install cf-uaac -v ${CF_UAAC_GEM_VERSION}
