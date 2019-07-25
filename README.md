@@ -25,6 +25,7 @@ Additional CLI
 * Terraform
 * jq
 * bosh
+* cf-uaac
 
 
 ## Usage
