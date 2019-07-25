@@ -2,7 +2,7 @@
 ![Docker Pulls](https://img.shields.io/docker/pulls/dohq/bosh-env.svg)  
 An image that satisfies the required dependencies for the `bosh create-env` command.  
 
-BaseImage: Ubuntu/18.04
+BaseImage: Ubuntu/18.04  
 Packages:
 * build-essential
 * zlibc
