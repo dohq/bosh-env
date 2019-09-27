@@ -1,4 +1,4 @@
-FROM ubuntu:18.04
+FROM ubuntu:16.04
 MAINTAINER dohq <dorastone@gmail.com>
 
 ENV BOSH_CLI_VERSION 5.5.1
@@ -7,7 +7,7 @@ ENV TERRAFORM_CLI_VERSION 0.12.1
 ENV CF_UAAC_GEM_VERSION 4.1.0
 
 RUN apt-get update && \
-      apt-get install -y build-essential zlibc zlib1g-dev ruby ruby-dev openssl libxslt1-dev libxml2-dev libssl-dev libreadline7 libreadline-dev libyaml-dev libsqlite3-dev sqlite3 curl wget ssh && \
+      apt-get install -y build-essential zlibc zlib1g-dev ruby ruby-dev openssl libxslt-dev libxml2-dev libssl-dev libreadline6 libreadline6-dev libyaml-dev libsqlite3-dev sqlite3 curl wget ssh && \
       wget https://github.com/cloudfoundry/bosh-cli/releases/download/v${BOSH_CLI_VERSION}/bosh-cli-${BOSH_CLI_VERSION}-linux-amd64 && \
       mv bosh-cli-${BOSH_CLI_VERSION}-linux-amd64 bosh && \
       chmod +x bosh && \
