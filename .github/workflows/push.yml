@@ -24,7 +24,7 @@ jobs:
     - name: Build and Push
       env:
         REPOSITORY: dohq/bosh-env
-        IMAGE_TAG: ${{ steps.get_version.outputs.version }}
+        VERSION: ${{ steps.get_version.outputs.version }}
         DOCKER_BUILDKIT: 1
       run: |
         make build VERSION=$IMAGE_TAG IMAGE=$REPOSITORY
