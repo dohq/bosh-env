@@ -29,3 +29,4 @@ jobs:
       run: |
         make build VERSION=$IMAGE_TAG IMAGE=$REPOSITORY
         make push VERSION=$IMAGE_TAG IMAGE=$REPOSITORY
+        make cache VERSION=$IMAGE_TAG IMAGE=$REPOSITORY
