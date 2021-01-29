@@ -22,10 +22,8 @@ Packages:
 * wget
 
 Additional CLI  
-* Terraform
 * jq
 * bosh
-* cf-uaac
 
 
 ## Usage
@@ -42,4 +40,4 @@ docker
 `docker pull dohq/bosh-env:latest`
 
 ## Author
-dohq(dorastone@gmail.com)
+dohq
