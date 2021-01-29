@@ -1,5 +1,5 @@
-IMAGE=dohq/bosh-env
-VERSION=6.4.1
+IMAGE=
+VERSION=
 
 build:
 	docker build --cache-from=$(IMAGE):latest \
@@ -8,6 +8,5 @@ build:
 		-t $(IMAGE):latest .
 
 push:
-	docker push $(IMAGE):$(VERSION) &
-	docker push $(IMAGE):latest &
-	wait
+	docker push $(IMAGE):$(VERSION)
+	docker push $(IMAGE):latest
